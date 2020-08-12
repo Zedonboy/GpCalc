@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                             xmlns:app="http://schemas.android.com/apk/res-auto"
+                                             xmlns:tools="http://schemas.android.com/tools"
+                                             android:layout_width="match_parent"
+                                             android:layout_height="match_parent">
+
+    <ScrollView
+            android:layout_width="0dp"
+            android:layout_height="0dp" android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp" app:layout_constraintTop_toTopOf="parent" android:layout_marginTop="8dp"
+            app:layout_constraintBottom_toBottomOf="parent" android:layout_marginBottom="8dp"
+            app:layout_constraintHorizontal_bias="0.0" app:layout_constraintVertical_bias="0.0">
+        <LinearLayout android:padding="16dp" android:layout_width="match_parent" android:layout_height="wrap_content"
+                      android:orientation="vertical">
+            <LinearLayout
+                    android:layout_marginTop="16dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" android:orientation="vertical">
+                <TextView
+                        android:text="Grade A"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" android:id="@+id/gradeA_text"/>
+                <SeekBar
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" android:id="@+id/seekBar_gradeA" android:max="10"
+                />
+            </LinearLayout>
+            <LinearLayout
+                    android:layout_marginTop="16dp"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                <TextView
+                        android:text="Grade B"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" android:id="@+id/gradeB_text"/>
+                <SeekBar
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" android:id="@+id/seekBar_gradeB" android:max="10"/>
+            </LinearLayout>
+            <LinearLayout
+                    android:layout_marginTop="16dp"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                <TextView
+                        android:text="Grade C"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" android:id="@+id/gradeC_text"/>
+                <SeekBar
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" android:id="@+id/seekBar_gradeC" android:max="10"/>
+            </LinearLayout>
+            <LinearLayout
+                    android:layout_marginTop="16dp"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                <TextView
+                        android:text="Grade D"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" android:id="@+id/gradeD_text"/>
+                <SeekBar
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" android:id="@+id/seekBar_gradeD" android:max="10"/>
+            </LinearLayout>
+            <LinearLayout
+                    android:layout_marginTop="16dp"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                <TextView
+                        android:text="Grade E"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" android:id="@+id/gradeE_text"/>
+                <SeekBar
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" android:id="@+id/seekBar_gradeE" android:max="10"/>
+            </LinearLayout>
+            <LinearLayout
+                    android:layout_marginTop="16dp"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                <TextView
+                        android:text="Grade F"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" android:id="@+id/gradeF_text"/>
+                <SeekBar
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" android:id="@+id/seekBar_gradeF" android:max="10"/>
+            </LinearLayout>
+            <Button
+                    android:text="Save"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" tools:layout_editor_absoluteY="386dp"
+                    tools:layout_editor_absoluteX="147dp" android:id="@+id/save_settings"/>
+        </LinearLayout>
+    </ScrollView>
+</android.support.constraint.ConstraintLayout>

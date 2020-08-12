@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_margin="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="100dp" app:cardElevation="6dp" app:cardCornerRadius="6dp"
+        app:cardBackgroundColor="@color/cardview_light_background">
+    <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" android:background="@drawable/card_background_color">
+
+        <TextView
+                android:textColor="@color/cardview_dark_background"
+                android:text="@string/course"
+                android:layout_width="135dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/course_view_level_name"
+                app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="32dp"
+                android:layout_marginStart="32dp"
+                android:textSize="24sp" app:layout_constraintTop_toTopOf="parent" android:layout_marginTop="8dp"
+                app:layout_constraintBottom_toBottomOf="parent" android:layout_marginBottom="8dp"/>
+        <android.support.constraint.ConstraintLayout
+                android:background="@drawable/circular_background"
+                android:layout_width="70dp"
+                android:layout_height="70dp" android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp" app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" android:layout_marginTop="8dp"
+                app:layout_constraintBottom_toBottomOf="parent" android:layout_marginBottom="8dp"
+                android:id="@+id/constraintLayout">
+
+            <com.john.waveview.WaveView
+                    android:background="@drawable/circular_background"
+                    app:above_wave_color="@android:color/white"
+                    app:blow_wave_color="@android:color/white"
+                    app:progress="60"
+                    app:wave_height="little"
+                    app:wave_hz="normal"
+                    app:wave_length="middle"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent" android:gravity="center"
+                    android:id="@+id/course_waveView">
+            </com.john.waveview.WaveView>
+            <TextView
+                    android:id="@+id/course_grade"
+                    android:textColor="@android:color/white"
+                    android:text="@string/grade"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
+                    android:layout_marginRight="8dp" app:layout_constraintStart_toStartOf="parent"
+                    android:layout_marginLeft="8dp" android:layout_marginStart="8dp"
+                    app:layout_constraintBottom_toBottomOf="parent" android:layout_marginBottom="8dp"
+                    app:layout_constraintTop_toTopOf="parent" android:layout_marginTop="8dp" android:textSize="24sp"
+            />
+        </android.support.constraint.ConstraintLayout>
+        <ImageButton
+                android:background="@android:color/transparent"
+                android:layout_width="43dp"
+                android:layout_height="47dp" app:srcCompat="@drawable/ic_delete_forever_white_24dp"
+                android:id="@+id/level_view_delete" android:layout_weight="1"
+                android:scaleType="fitXY" app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp" app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_marginBottom="8dp" app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginTop="8dp" app:layout_constraintStart_toStartOf="@+id/constraintLayout"
+                android:layout_marginLeft="8dp" android:layout_marginStart="8dp"
+                app:layout_constraintHorizontal_bias="0.26" android:visibility="gone"/>
+    </android.support.constraint.ConstraintLayout>
+</android.support.v7.widget.CardView>

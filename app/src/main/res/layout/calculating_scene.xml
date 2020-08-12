@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                             xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+                                             android:layout_height="match_parent"
+                                             xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.john.waveview.WaveView
+            android:background="@drawable/circular_background"
+            app:above_wave_color="@android:color/white"
+            app:blow_wave_color="@android:color/white"
+            app:progress="0"
+            app:wave_height="little"
+            app:wave_hz="normal"
+            app:wave_length="middle"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" android:gravity="center"
+            android:id="@+id/course_waveView" app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintVertical_bias="0.5">
+    </com.john.waveview.WaveView>
+    <TextView
+            android:text="0.0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/animating_gp_score" android:layout_marginTop="8dp"
+            app:layout_constraintTop_toTopOf="@+id/course_waveView" app:layout_constraintBottom_toBottomOf="@+id/course_waveView"
+            android:layout_marginBottom="8dp" app:layout_constraintEnd_toEndOf="@+id/course_waveView"
+            android:layout_marginEnd="8dp" android:layout_marginRight="8dp"
+            app:layout_constraintStart_toStartOf="@+id/course_waveView" android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp" android:textSize="96sp" android:textColor="@android:color/white"/>
+    <ImageButton
+            android:layout_width="60dp"
+            android:layout_height="68dp" app:srcCompat="@drawable/ic_close_grey_800_24dp"
+            android:id="@+id/calculating_close_button" android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" android:layout_marginTop="8dp"
+            android:background="@android:color/transparent"/>
+    <TextView
+            android:text="TextView"
+            android:layout_width="153dp"
+            android:layout_height="48dp"
+            android:id="@+id/textView5" android:layout_marginTop="32dp"
+            app:layout_constraintTop_toBottomOf="@+id/course_waveView" android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp"/>
+
+
+</android.support.constraint.ConstraintLayout>
